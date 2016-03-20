@@ -1,0 +1,13 @@
+<p>The demo server may need to wake up first, please give it some time...</p>
+<script src="https://s3-auth0-demo.herokuapp.com/s3-links.js"></script>
+
+<p>The following file <code>example-file.png</code> is served from the private AWS S3 bucket named <b>s3-auth0-demo-restricted-area</b>. Here is the <a href="https://s3-auth0-demo-restricted-area.s3.amazonaws.com/example-file.png">raw restricted file link</a> (should respond with "access denied")</p>
+
+<p>Here is the <a href="#s3/example-file.png">password-protected link to the same file</a> (sample login: <b>abc@example.com</b> / <b>1234</b>).</p>
+
+<p>Here is how the markup looks:</p>
+
+<textarea readonly cols="100" rows="10">
+&lt;script src="https://s3-auth0-demo.herokuapp.com/s3-link-agent.js"&gt;&lt;/script&gt;
+&lt;a href="#s3/example-file.png"&gt;password-protected S3 link&lt;/a&gt;
+</textarea>
